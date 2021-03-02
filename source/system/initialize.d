@@ -8,7 +8,6 @@ static this()
 {
     import utilities.fatal;
 
-    writeln("Initialization...");
     auto sdlSupport = loadSDL();
     writeln("sdlSupport: ", sdlSupport);
 
@@ -22,12 +21,9 @@ static this()
 
     if (SDL_Init(SDL_INIT_EVERYTHING) == -1)
         fatal("Error: failed to init SDL: " ~ to!string(SDL_GetError()));
-    writeln("OK");
 }
 
 static ~this()
 {
-    writeln("Deinitialization...");
     SDL_Quit();
-    writeln("OK");
 }

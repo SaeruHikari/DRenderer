@@ -32,9 +32,14 @@ import std.conv;
 import std.string;
 import bindbc.sdl;
 
-class Window
+interface Window
 {
-    protected:
+    
+}
+
+class SDL2Window : Window
+{
+protected:
     SDL_Window* _sdlWindow = null;
     SDL_SysWMinfo _wmInfo;
     uint _width = 800;
