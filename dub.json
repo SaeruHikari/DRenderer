@@ -1,0 +1,39 @@
+{
+	"name": "d-renderer",
+    "description": "",
+    "homepage": "",
+    "license": "MIT",
+    "authors": [
+        "SaeruHiakri"
+	],
+	
+	"dependencies": {
+        "bindbc-sdl": "~>0.19.1",
+        "bindbc-wgpu": "0.1.0-alpha.10",
+        "dlib": "~>0.19.2"
+	},
+	
+	"versions": [
+        "SDL_2010"
+	],
+	
+    "importPaths": [
+        "source"
+    ],
+
+    "buildRequirements":[
+        "allowWarnings"
+	],
+	
+	"mainSourceFile": "source/main.d",
+
+	"configurations": [
+        {
+            "name": "application",
+            "targetType": "executable"
+        }
+    ],
+	
+	"copyFiles-windows-x86": ["lib/x86/*.dll"],
+    "copyFiles-windows-x86_64": ["lib/x64/*.dll"]
+}

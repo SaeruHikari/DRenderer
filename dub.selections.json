@@ -1,0 +1,9 @@
+{
+	"fileVersion": 1,
+	"versions": {
+		"bindbc-loader": "0.3.2",
+		"bindbc-sdl": "0.19.2",
+		"bindbc-wgpu": "0.1.0-alpha.10",
+		"dlib": "0.19.2"
+	}
+}
